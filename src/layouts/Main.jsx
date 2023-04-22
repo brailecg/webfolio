@@ -6,7 +6,7 @@ const Main = () => {
   return (
     <div>
       <Nav />
-      <main>
+      <main className="bg-bg-primary px-6 sm:px-20">
         <Outlet />
       </main>
     </div>
