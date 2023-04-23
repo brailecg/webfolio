@@ -25,13 +25,13 @@ const Nav = () => {
   const [showSidebar, setShowSidebar] = useState(false);
 
   return (
-    <div className="relative flex justify-between items-center text-lg text-font-primary  h-20 bg-bg-secondary px-4 sm:px-20">
+    <nav className="relative flex justify-between items-center text-lg text-font-primary  h-20 bg-bg-secondary px-4 sm:px-20">
       <div className="">Logo Here</div>
       <div className="hidden md:flex">
         <ul className="flex">
           {navLinks.map((nav) => {
             return (
-              <li key={nav.id} className="px-4 font-bold">
+              <li key={nav.id} className="px-4 font-semibold">
                 {nav.title}
               </li>
             );
@@ -56,7 +56,7 @@ const Nav = () => {
           <ul className="flex flex-col bg-bg-secondary">
             {navLinks.map((nav) => {
               return (
-                <li key={nav.id} className="px-4 font-bold mb-4">
+                <li key={nav.id} className="px-4 font-semibold mb-4">
                   {nav.title}
                 </li>
               );
@@ -64,7 +64,7 @@ const Nav = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

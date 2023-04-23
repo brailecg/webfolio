@@ -5,7 +5,6 @@ const Dashboard = () => {
     <div>
       <Header />
       <Featured />
-      <Products />
       <Contacts />
     </div>
   );
